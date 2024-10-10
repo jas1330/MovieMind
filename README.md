@@ -1,4 +1,6 @@
 MovieMind 
+
+
 This is a Content-Based Movie Recommendation System Flask app 
 The "MovieMind" project utilizes Flask, MySQL, and Python to create a personalized movie recommendation system based on user preferences. Users can easily search for movies, view details, and receive tailored recommendations using content-based filtering. By integrating the TMDb API, users gain access to additional information like movie posters, cast, and other metadata. The system enables users to explore similar movies. The content-based recommendation engine uses cosine similarity to suggest movies with similar features, enhancing user engagement and satisfaction. The backend handles user authentication, data storage, and movie recommendations, ensuring a smooth user experience.
 
