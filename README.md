@@ -25,8 +25,8 @@ Version Control: Git
 
 CSS Framework: Tailwind CSS (for styling)
 
-##For Full Working project contact 
-##emailid:jasdeepkaursaini42@gmail.com
+## For Full Working project contact 
+## emailid: jasdeepkaursaini42@gmail.com
 
 ## Download the Model File
 The trained model file is too large to be stored directly in this repository. You can download it using the link below:
