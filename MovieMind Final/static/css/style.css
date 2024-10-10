@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #948E99;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9fafa;
+    position: relative;
+    height: 70px;
+}
+
+
+/* If logo is text */
+.logo {
+    color: #2E1437;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+   
+}
+.logo:hover {
+    color: #FFD700; /* Hover color for logo */
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    
+    color: #2E1437;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Hover text color (gold in this case) */
+    background-color: #2E1437; /* Hover background color */
+    padding: 5px 10px; /* Optional padding to make the hover area larger */
+    border-radius: 5px; /* Optional: Add rounded corners on hover */
+}
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #2E1437;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #f9fafa;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+
+.bg-body{
+    background: #948E99;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/* Font and text color styling */
+.text-body {
+    color: #FFFFFF; /* White for good contrast against dark background */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean, modern font */
+}
+
+/* Additional styling for headers */
+.text-header {
+    color: #FFD700; /* Gold color for a highlight effect */
+    font-family: 'Playfair Display', serif; /* Elegant, classic font for headers */
+}
+
+/* Button styling */
+.btn-custom {
+    text-emphasis-color: light;
+    background-color: #c52424; /* Dark purple button */
+    color: #FFFFFF; /* White text for contrast */
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #660e7c9c; /* Slightly lighter purple on hover */
+}
+/* .mt-100{
+    margin-top:100px;
+} */
+
+.bg-contactb{background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
+.navbar {
+    background-color: #FFFFFF; /* White or light gray */
+    
+}
+.nav-link {
+    /* color: #FFD700 !important; Gold text */
+    color:#2E1437;
+  }
+
+.nav-link:hover {
+    
+    color: #FFD700 !important;
+  }
+.navbar-nav .nav-item {
+    margin-left: 30px; /* Add space between items */
+  }
+  /* Set the navbar items to be horizontal with spacing */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between items */
+    align-items: center;
+}
+
+/* Remove margin from the last nav-item to avoid extra space */
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+.custom-login-btn {
+    background-color: #FFD700; /* Replace with your preferred color */
+    border-color: #FFD700;     /* Ensure the border matches the background */
+}
+
+/* Optionally, change the hover color */
+.custom-login-btn:hover {
+    background-color: #ffcc33; /* Slightly darker gold for hover effect */
+}

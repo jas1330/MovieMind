@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMind-A Movie Recommendation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../static/css/style.css">    
+</head>
+    <nav>
+      <div class="logo">
+        
+        <h1><a href="/">MovieMind</a></h1>
+      </div>
+      <ul id="menuList">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/login">Login</a></li>
+          
+      </ul>
+      <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+  </nav>
+
+
+  <script>
+      let menuList = document.getElementById("menuList")
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+              menuList.style.maxHeight = "300px";
+          }
+          else{
+              menuList.style.maxHeight = "0px";
+          }
+      }
+      
+  </script>
+        
+        <section class="text-gray-600 body-font mt-5">
+            <div class="container px-5 py-15 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-yellow-500 tracking-widest font-medium title-font mb-1">MovieMind</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-light">Our Technology</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-header">Leveraging cutting-edge machine learning models, we analyze content data and user behavior to generate personalized movie recommendations that match your unique tastes.</p>
+              </div>
+              <div class="flex flex-wrap">
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Programming Languages</h2>
+                  <p class="leading-relaxed text-header mb-4"><strong class="text-light">Python:</strong> Our core programming language, used for developing the recommendation algorithms and handling data processing tasks.</p>
+                  
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Data Processing</h2>
+                  <p class="leading-relaxed text-header mb-4"><strong class="text-light">Pandas & NumPy:</strong> Essential for data manipulation and numerical operations, allowing us to handle and analyze large datasets of movie metadata efficiently.
+                    <p class="leading-relaxed text-header mb-4"><strong class="text-light">NLTK:</strong> These libraries help us process text data, such as movie descriptions, enabling our system to understand and interpret content accurately.</p>
+                    <p class="leading-relaxed text-header mb-4"><strong class="text-light">Scikit-learn:</strong> We use Scikit-learn to implement algorithms that determine similarities between movies.</p>
+                    
+                
+            </p>
+                  
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">APIs and External Data Sources</h2>
+                  <p class="leading-relaxed text-header mb-4"><strong class="text-light">TMDb API & OMDb API:</strong> These APIs provide us with rich movie metadata, including titles, genres, descriptions, and posters, which are essential for our recommendation algorithms.</p>
+                  
+                   
+                  
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Machine Learning Algorithms</h2>
+                    <p class="leading-relaxed text-header mb-4"><strong class="text-light">Content-Based Filtering</strong> (Algorithm Type: Supervised Learning) focuses on the characteristics of items (movies) and user preferences. It analyzes attributes such as genres, actors, directors, and descriptions, then matches them with a user's preferences or history, like past movie ratings. 
+                        Common algorithms used include:
+                        <ul class="text-header">
+                            <li><strong class="text-light">TF-IDF (Term Frequency-Inverse Document Frequency)</strong>: Used for text features like movie descriptions or genres.</li>
+                            <li><strong class="text-light">COSINE SIMILARITY</strong>: Measures the similarity between two movies based on their attributes.</li>
+                            <li><strong class="text-light">K-NEAREST NEIGHBORS (k-NN)</strong>:Used to find similar movies based on their features.</li>
+                        </ul></p>
+                    
+                    
+                     
+                    
+                  </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                  <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Web Development Frameworks</h2>
+                  <p class="leading-relaxed text-header mb-4"><strong class="text-light">Flask:</strong> A lightweight web framework used to build the backend of our recommendation system.</p>
+                </div>
+        
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Frontend Technologies</h2>
+                    <p class="leading-relaxed text-header mb-4"> 
+                        <strong class="text-light">HTML/CSS:</strong> The backbone of our user interface design, ensuring our platform is accessible and visually appealing.
+                      </p>
+                      <p class="leading-relaxed text-header mb-4"> 
+                        <strong class="text-light">Bootstrap & Tailwind CSS:</strong> For quick, responsive design with pre-styled components.
+                      </p>  
+                  </div>
+                
+                  <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Database Management</h2>
+                    <p class="leading-relaxed text-header mb-4"><strong class="text-light">MySQL:</strong> For scalable, production-ready database management, we rely on these robust systems.</p>
+                    
+                    
+                     
+                    
+                  </div>
+                  <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                    <h2 class="text-lg sm:text-xl text-light font-medium title-font mb-2">Version Control and Collaboration</h2>
+                    <p class="leading-relaxed text-header mb-4"><strong class="text-light">Git & GitHub:</strong> These tools allow us to manage code versions effectively and collaborate with our development team.</p>
+                    
+                    
+                     
+                    
+                  </div>
+              </div>
+              <a href="/about" class="href"><button class="flex mt-5 mx-auto text-dark bg-[#f3eaea] border-0 py-2 px-8 focus:outline-none hover:bg-[#FFD700] rounded text-lg">Back</button></a>
+            </div>
+          </section>
+        
+          <footer class="bg-white text-dark mt-4 p-4">
+            <div class="container text-center">
+                <p class="text-sm">&copy; 2024 <span class="text-warning">MovieMind</span>. All rights reserved.</p>
+            </div>
+        </footer>
+        
+       
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </body>
+        </html>
+        

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMind-A Movie Recommendation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../static/css/style.css">    
+</head>
+    <nav>
+      <div class="logo">
+        <h1><a href="/">MovieMind</a></h1>
+      </div>
+      <ul id="menuList">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/login">Login</a></li>
+          
+      </ul>
+      <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+  </nav>
+
+
+  <script>
+      let menuList = document.getElementById("menuList")
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+              menuList.style.maxHeight = "300px";
+          }
+          else{
+              menuList.style.maxHeight = "0px";
+          }
+      }
+      
+  </script>
+    <section class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-bold text-header mb-6">Our Mission</h1>
+        <p class="text-lg leading-relaxed text-header">At MovieMind, our mission is to connect movie lovers with films they will cherish. We use advanced content-based recommendation algorithms that learn and adapt to individual preferences, ensuring that each recommendation is tailored to your unique taste.</p>
+        <p class="text-lg leading-relaxed text-header mt-4">We believe that everyone has a unique cinematic journey, and our goal is to make that journey as enriching and enjoyable as possible by helping you discover movies that truly resonate with you.</p>
+    </section>
+   
+          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
