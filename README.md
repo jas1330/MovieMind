@@ -74,3 +74,9 @@ The trained model file is too large to be stored directly in this repository. Yo
 
 ## Streaming Platform via Streaming API 
 ![Screenshot 2024-10-11 005337](https://github.com/user-attachments/assets/2e1d9c9a-0c74-4b3f-a6fb-522ca3c0dbf6)
+
+## Database Schema
+
+
+![Screenshot 2024-10-12 233734](https://github.com/user-attachments/assets/26097daf-ffc9-4d78-95fa-b389c0d8d9d3)
+![Screenshot 2024-10-12 233800](https://github.com/user-attachments/assets/b739bf50-e8e5-4c2f-a051-38add34ebcb5)
