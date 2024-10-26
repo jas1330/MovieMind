@@ -20,9 +20,9 @@ import requests
 app = Flask(__name__)
 # MySQL Configuration
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'WJ28@krhps'
-app.config['MYSQL_DB'] = 'moviedb'
+app.config['MYSQL_USER'] = 'user_name'
+app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_DB'] = 'database_name'
 app.secret_key = 'your_secret_key_here'
 
 mysql = MySQL(app)
@@ -51,7 +51,7 @@ movies = pickle.load(open('movie_list.pkl', 'rb'))
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 def fetch_movie_details(movie_id):
-    api_key = '80bcd0596c19580bbb6938fa4410838b'
+    api_key = 'your_api_key'
     movie_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
     provider_url = f"https://api.themoviedb.org/3/movie/{movie_id}/watch/providers?api_key={api_key}"
     credits_url = f"https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key={api_key}&language=en-US"
